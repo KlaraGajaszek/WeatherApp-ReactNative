@@ -18,6 +18,6 @@
     "noEmit": true,
     "typeRoots": ["./src/types"],
   },
-  "include": ["src/**/*"],
+  "include": ["src/**/*", "src/utils"],
 
 }

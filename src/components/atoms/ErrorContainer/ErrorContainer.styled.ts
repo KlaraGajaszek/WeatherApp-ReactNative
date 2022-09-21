@@ -2,7 +2,6 @@ import styled from 'styled-components/native';
 
 export const Container = styled.View`
   display: flex;
-
   padding: 8px;
   background: ${({ theme: { palette } }) => palette.background.primar};
   margin: 0 8px;

@@ -6,7 +6,7 @@ import { useFetch } from './helpers/useGetData';
 import { WeatherResponse } from './types/weatherDetails';
 
 export const useGetWeatherDetails = () => {
-  const [location, setLocation] = useState<GeoPosition>({ latitude: 53, longitude: 56 });
+  const [location, setLocation] = useState<GeoPosition>({ latitude: 38.44, longitude: 9.01 });
 
   useEffect(() => {
     (async () => {
