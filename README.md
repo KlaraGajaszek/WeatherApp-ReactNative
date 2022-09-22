@@ -1,6 +1,6 @@
 # Weather application - React Native
   
-A  Weather application in React Native is allows check current weather and weather for the next few days 🔥.
+The  Weather application in React Native is allows check current weather and weather for the next few days 🔥.
 
 
 ## Getting started
