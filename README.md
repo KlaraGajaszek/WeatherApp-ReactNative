@@ -108,7 +108,7 @@ yarn: 1.22.4
 
 **tests-utils** - files with wrappers for tests cases.
 
-##### Styles
+## Styles
 
 For create style I used [react native styled component](https://styled-components.com) and create customization's theme.
 
