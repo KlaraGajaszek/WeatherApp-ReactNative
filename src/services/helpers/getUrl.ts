@@ -1,12 +1,11 @@
-export type GeoPosition = { latitude: number; longitude: number } | undefined;
-// import API_BASE from 'react-native-dotenv';
+import { APIKEY } from '../../variables';
 
-const API = 'YOU KEY';
+export type GeoPosition = { latitude: number; longitude: number } | undefined;
 
 export const getWeatherUrl = (position: GeoPosition) => {
   const basicUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${position?.latitude}&lon=${position?.longitude}&units=metric&appid=`;
 
-  const url = `${basicUrl}${API}`;
+  const url = `${basicUrl}${APIKEY}`;
 
   if (position?.latitude && position?.longitude) {
     return url;

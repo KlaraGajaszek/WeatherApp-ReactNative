@@ -1,7 +1,7 @@
 import { ThemeProvider } from 'styled-components/native';
 import { theme } from '../src/utils/theme';
 import { WeatherContext } from '../src/context/weatherContext';
-import { weatherResonse } from '../src/__mocked__/weatherResponse';
+import { weatherResonse } from '../src/mocked/weatherResponse';
 
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },

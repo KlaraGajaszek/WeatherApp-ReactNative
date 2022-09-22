@@ -4,6 +4,7 @@ export const Container = styled.View`
   flex: 1;
   flex-direction: column;
   padding-top: 2px;
+  align-items: center;
 `;
 
 export const CityText = styled.Text`

@@ -1,6 +1,6 @@
 import { Container, ErrorHeader, ErrorMessage } from './ErrorContainer.styled';
 
-export type ErrorContainerProps = { errorMessage: string };
+export type ErrorContainerProps = { errorMessage: string | undefined };
 
 export const ErrorContainer = ({ errorMessage }: ErrorContainerProps) => {
   return (

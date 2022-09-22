@@ -3,17 +3,20 @@ import * as Location from 'expo-location';
 
 import { GeoPosition, getWeatherUrl } from './helpers/getUrl';
 import { useFetch } from './helpers/useGetData';
-import { WeatherResponse } from './types/weatherDetails';
+import { WeatherResponse } from '../mocked/weatherDetails';
 
 export const useGetWeatherDetails = () => {
   const [location, setLocation] = useState<GeoPosition>({ latitude: 38.44, longitude: 9.01 });
 
   useEffect(() => {
     (async () => {
-      const { coords } = await Location.getCurrentPositionAsync({ accuracy: Location.Accuracy.Highest });
-      const { latitude, longitude } = coords;
+      const { status } = await Location.requestForegroundPermissionsAsync();
+      if (status === 'granted') {
+        const { coords } = await Location.getCurrentPositionAsync({ accuracy: Location.Accuracy.Highest });
+        const { latitude, longitude } = coords;
 
-      setLocation({ latitude, longitude });
+        setLocation({ latitude, longitude });
+      }
     })();
   }, []);
 

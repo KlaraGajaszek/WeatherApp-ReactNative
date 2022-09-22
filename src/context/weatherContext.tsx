@@ -1,6 +1,6 @@
 import React, { useContext, createContext } from 'react';
 
-import { WeatherResponse } from '../services/types/weatherDetails';
+import { WeatherResponse } from '../../types/weatherDetails';
 import { useGetWeatherDetails } from '../services/useGetWeatherDetails';
 
 type WeatherContextProvider = { children: React.ReactNode };

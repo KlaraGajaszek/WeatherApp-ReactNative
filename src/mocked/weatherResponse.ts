@@ -1,4 +1,6 @@
-export const weatherResonse = {
+import { WeatherResponse } from './weatherDetails';
+
+export const weatherResonse: WeatherResponse = {
   cod: '200',
   message: 0,
   cnt: 40,

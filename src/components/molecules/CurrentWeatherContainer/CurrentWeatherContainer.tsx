@@ -1,4 +1,4 @@
-import { IconId } from '../../../services/types/weatherDetails';
+import { IconId } from '../../../../types/weatherDetails';
 
 import { Temperature, WeatherIcon, Container } from './CurrentWeatherContainer.styled';
 
@@ -20,6 +20,7 @@ export const CurrentWeatherContainer = ({
   return (
     <Container>
       <WeatherIcon
+        testID={iconId}
         width={imageWidth}
         height={imageHeight}
         source={{ uri: `http://openweathermap.org/img/w/${iconId}.png` }}

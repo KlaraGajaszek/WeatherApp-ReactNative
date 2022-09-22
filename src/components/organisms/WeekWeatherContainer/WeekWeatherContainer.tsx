@@ -1,5 +1,5 @@
 import { useWeatherContext } from '../../../context/weatherContext';
-import { WeatherCard } from '../../organisms/WeatherCard/WeatherCard';
+import { WeatherCard } from '../../molecules/WeatherCard/WeatherCard';
 
 import { ScrollContainer } from './WeekWeatherContainer.styled';
 

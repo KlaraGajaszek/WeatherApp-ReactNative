@@ -1,25 +1,3 @@
-export type WeatherName =
-  | 'chanceflurries'
-  | 'chancerain'
-  | 'chancesleet'
-  | 'chancesnow'
-  | 'chancetstorms'
-  | 'clear'
-  | 'cloudy'
-  | 'flurries'
-  | 'fog'
-  | 'hazy'
-  | 'mostlycloudy'
-  | 'mostlysunny'
-  | 'partlycloudy'
-  | 'partlysunny'
-  | 'rain'
-  | 'sleet'
-  | 'snow'
-  | 'sunny'
-  | 'tstorms'
-  | 'unknown';
-
 export type IconId =
   | '01d'
   | '02d'
@@ -48,7 +26,7 @@ export type IconId =
   | '12n'
   | '13n';
 
-export type Weather = { id: number; main: WeatherName; description: string; icon: IconId };
+export type Weather = { id: number; main: string; description: string; icon: IconId };
 export type WeatherResponse = {
   list: Array<{
     clouds: { all: number };
@@ -65,9 +43,9 @@ export type WeatherResponse = {
       temp_max: number;
       temp_min: number;
     };
-    pop: number;
-    rain: unknown;
-    sys: { pod: string };
+    pop?: number;
+    rain?: unknown;
+    sys?: { pod: string };
     visibility: number;
     weather: Array<Weather>;
     wind: { speed: number; deg: number; gust: number };

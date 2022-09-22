@@ -1,7 +1,7 @@
 import moment from 'moment';
 
-import { CurrentWeatherContainer } from '../../molecules/CurrentWeatherContainer/CurrentWeatherContainer';
-import { IconId } from '../../../services/types/weatherDetails';
+import { CurrentWeatherContainer } from '../CurrentWeatherContainer/CurrentWeatherContainer';
+import { IconId } from '../../../../types/weatherDetails';
 
 import { CardContainer, CardHeader, DayText, HoursText } from './WeatherCard.styled';
 
@@ -22,7 +22,7 @@ export const WeatherCard = ({ temperatureValue, iconId, date }: WeatherCardProps
       <CurrentWeatherContainer
         iconId={iconId}
         imageWidth={120}
-        imageHeight={60}
+        imageHeight={80}
         temperatureValue={temperatureValue}
         temperatureFontSize={25}
       />

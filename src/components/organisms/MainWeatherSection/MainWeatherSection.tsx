@@ -1,6 +1,6 @@
 import { LocationContainer } from '../../molecules/LocationContainer';
 import { WeatherDetailsContainer } from '../../molecules/WeatherDetailsContainer';
-import { WeekWeatherContainer } from '../../molecules/WeekWeatherContainer';
+import { WeekWeatherContainer } from '../WeekWeatherContainer';
 
 import { Header, WeatherTemperatureContainer, MainWeatherSectionContainer } from './MainWeatherSection.styled';
 
