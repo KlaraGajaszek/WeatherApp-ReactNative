@@ -1,9 +1,5 @@
-// it was copy from https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/styled-components-react-native/index.d.ts - reason: doesn't work when install the package
+// it was copy from https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/styled-components-react-native/index.d.ts - reason: doesn't work when install external yarn package
 
-// Type definitions for styled-components-react-native 5.1
-// Project: https://github.com/styled-components/styled-components
-// Definitions by: Nathan Bierema <https://github.com/Methuselah96>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
 // tslint:disable-next-line:no-single-declare-module
 declare module 'styled-components/native' {

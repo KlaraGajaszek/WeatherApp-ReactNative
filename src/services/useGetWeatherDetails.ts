@@ -1,8 +1,8 @@
-import { useFetch } from './hooks/useGetData';
+import { useFetch } from './shared/useGetData';
 import { WeatherResponse } from '../mocked/types/weatherDetails';
-import { getError } from './helpers/getError';
+import { getError } from '../helpers/getError';
 import { useGetLocalization } from './useGetLocalization';
-import { getWeatherUrl } from './helpers/getUrl';
+import { getWeatherUrl } from '../helpers/getUrl';
 
 export const useGetWeatherDetails = () => {
   const { localization, errorMessage } = useGetLocalization();

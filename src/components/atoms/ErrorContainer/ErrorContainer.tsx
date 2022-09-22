@@ -8,7 +8,7 @@ export const ErrorContainer = ({ errorMessage }: ErrorContainerProps) => {
     <Container>
       <ErrorHeader>{ErrorTextMessage.title}</ErrorHeader>
       <ErrorMessage>
-        `${ErrorTextMessage.description} ${errorMessage}`
+        {ErrorTextMessage.description} {errorMessage}
       </ErrorMessage>
     </Container>
   );

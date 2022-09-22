@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import * as Location from 'expo-location';
 
-import { GeoPosition } from './helpers/getUrl';
+import { GeoPosition } from '../helpers/getUrl';
 import { ErrorTextMessage } from '../constants/errors';
 
 export const useGetLocalization = () => {
