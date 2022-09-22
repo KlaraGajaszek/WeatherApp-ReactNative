@@ -1,5 +1,5 @@
 
-// it is copy from https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/jest/index.d.ts - it doesn't work when install external yarn package with types
+// it is copy from https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/jest/index.d.ts - reason: doesn't work when install external yarn package
 
 declare var beforeAll: jest.Lifecycle;
 declare var beforeEach: jest.Lifecycle;
