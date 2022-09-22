@@ -1,21 +1,16 @@
-import { render } from '@testing-library/react-native';
-
-import { ThemeProvider } from 'styled-components/native';
+import { render } from '../../../test-utils';
 import { CurrentWeatherContainer } from '.';
-import { theme } from '../../../utils/theme';
 
 describe('Current Weather container', () => {
   it('all properties should render correctly', () => {
     const { getByText, getByTestId } = render(
-      <ThemeProvider theme={theme}>
-        <CurrentWeatherContainer
-          temperatureValue={20}
-          iconId="03d"
-          imageWidth={250}
-          imageHeight={250}
-          temperatureFontSize={20}
-        />
-      </ThemeProvider>,
+      <CurrentWeatherContainer
+        temperatureValue={20}
+        iconId="03d"
+        imageWidth={250}
+        imageHeight={250}
+        temperatureFontSize={20}
+      />,
     );
 
     const weatherIcon = getByTestId('03d');

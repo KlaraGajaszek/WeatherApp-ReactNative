@@ -1,4 +1,4 @@
-import { WeatherResponse } from './weatherDetails';
+import { WeatherResponse } from './types/weatherDetails';
 
 export const weatherResonse: WeatherResponse = {
   cod: '200',

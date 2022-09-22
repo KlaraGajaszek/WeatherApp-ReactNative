@@ -1,4 +1,4 @@
-import { IconId } from '../../../../types/weatherDetails';
+import { IconId } from '../../../mocked/types/weatherDetails';
 
 import { Temperature, WeatherIcon, Container } from './CurrentWeatherContainer.styled';
 

@@ -2,8 +2,8 @@ import { useEffect, useState } from 'react';
 import * as Location from 'expo-location';
 
 import { GeoPosition, getWeatherUrl } from './helpers/getUrl';
-import { useFetch } from './helpers/useGetData';
-import { WeatherResponse } from '../mocked/weatherDetails';
+import { useFetch } from './hooks/useGetData';
+import { WeatherResponse } from '../mocked/types/weatherDetails';
 
 export const useGetWeatherDetails = () => {
   const [location, setLocation] = useState<GeoPosition>({ latitude: 38.44, longitude: 9.01 });

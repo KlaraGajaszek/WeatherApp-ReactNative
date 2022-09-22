@@ -1,7 +1,7 @@
 import moment from 'moment';
 
 import { CurrentWeatherContainer } from '../CurrentWeatherContainer/CurrentWeatherContainer';
-import { IconId } from '../../../../types/weatherDetails';
+import { IconId } from '../../../mocked/types/weatherDetails';
 
 import { CardContainer, CardHeader, DayText, HoursText } from './WeatherCard.styled';
 
