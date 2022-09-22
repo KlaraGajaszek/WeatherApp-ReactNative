@@ -24,6 +24,12 @@ yarn: 1.22.4
    5. Run `yarn install` in terminal
    6. Run `expo start`
    7. Select a (if you would like to open in android studio) or w (if you would like to open in web browser)
+
+### Step to run tests
+   1. Run `yarn test` in terminal
+   
+### Step to run storybook
+   1. Run `yarn storybook` in terminal
    
 ## Architecture
 
@@ -58,20 +64,17 @@ yarn: 1.22.4
 
 **storybook** - in this folder there is all configuration for storybook. More information can you find in Storybook section.
 
-**assets** - in this folder there is all icons, images, fonts which are use for example for favicon in web version. All use you can find in app.json file.
+**assets** - in this folder there is all icons, images, fonts which are use for example for favicon in web version.
 
 **src** - workspaces with code representing different parts of the project. You can read more about them in the next section.
 
 **.env** - There is file for environment variable 
-
-**.github** - GitHub-related configuration.
 
 **eslintrc.js** - global configuration file for the ESLint - static code analysis tool we use to keep our code style consistent.
 
 **.gitignore** - list of all files and directories across the entire monorepo that Git should ignore.
 
 **.prettierrc.js** - Prettier configuration for the entire project.
-
 
 **app.json** - one of React Native configuration files. Contains config for website.
 
@@ -89,9 +92,9 @@ yarn: 1.22.4
 
 **types** - in this folder there are modules types declarations.
 
-**components** - this folder consists of the atoms, molecules, organisms, pages. This structure represents [atomic design](https://atomicdesign.bradfrost.com/chapter-2/). I tried build small, modularized components and then consisting of them bigger and bigger ( organisms and pages)
+**components** - this folder consists of the atoms, molecules, organisms, pages. This structure represents [atomic design](https://atomicdesign.bradfrost.com/chapter-2/). I builed small, modularized components and then consisting of them builded bigger and bigger ( organisms and pages)
 
-**constants** - in this folder there is const variables which are use in all src folder. In the future I would like to add i18 to project and then replace constants folder with another.
+**constants** - in this folder there are const variables which are use in all src folder. In the future I would like to add i18 to project and then replace constants folder with another.
 
 **context** - weatherContext - in the weather context I fetched data from OpenWeather api using hooks from services. I use context because I would like to avoid `prop drilling` and now we can take data from anywhere place in the app.
 
@@ -99,7 +102,7 @@ yarn: 1.22.4
 
 **mocked** - in this folder there are mocked data which are uses for tests and stories in storybook.
 
-**services** - in this folder there are request for api services. One hook is responsible for one request.
+**services** - in this folder there are requests for api services. One hook is responsible for one request.
 
 **utils** - folder for other `utils` files. Now in this folder there is theme for styled components.
 
@@ -107,11 +110,12 @@ yarn: 1.22.4
 
 ##### Styles
 
-For create style I used [styled component](https://styled-components.com) and create customization's theme.
+For create style I used [react native styled component](https://styled-components.com) and create customization's theme.
 
 ## Storybook
 
 Every atom, molecule and organisms has special stories. When you run storybook then you can see all isolated components. It is really useful when we work in big team and change/add components really fast or we would like to see how it looks like without run application.
+
 ## Tests
 
 For tests I used Jest and react-native-testing-library. Tests is not completed. Now I added only examples, in the next iteration when I would like to develop this app I will add tests for other components and create mostly integration tests.  
