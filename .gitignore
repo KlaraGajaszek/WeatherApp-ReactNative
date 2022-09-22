@@ -12,4 +12,4 @@ web-build/
 yarn-error.log/
 # macOS
 .DS_Store
-.env
+.env/
