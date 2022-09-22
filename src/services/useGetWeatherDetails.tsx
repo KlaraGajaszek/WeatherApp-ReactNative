@@ -1,26 +1,12 @@
-import { useEffect, useState } from 'react';
-import * as Location from 'expo-location';
-
-import { GeoPosition, getWeatherUrl } from './helpers/getUrl';
 import { useFetch } from './hooks/useGetData';
 import { WeatherResponse } from '../mocked/types/weatherDetails';
+import { getError } from './helpers/getError';
+import { useGetLocalization } from './useGetLocalization';
+import { getWeatherUrl } from './helpers/getUrl';
 
 export const useGetWeatherDetails = () => {
-  const [location, setLocation] = useState<GeoPosition>({ latitude: 38.44, longitude: 9.01 });
+  const { localization, errorMessage } = useGetLocalization();
+  const { data, loading, error } = useFetch<WeatherResponse>(getWeatherUrl(localization));
 
-  useEffect(() => {
-    (async () => {
-      const { status } = await Location.requestForegroundPermissionsAsync();
-      if (status === 'granted') {
-        const { coords } = await Location.getCurrentPositionAsync({ accuracy: Location.Accuracy.Highest });
-        const { latitude, longitude } = coords;
-
-        setLocation({ latitude, longitude });
-      }
-    })();
-  }, []);
-
-  const { data, loading, error } = useFetch<WeatherResponse>(getWeatherUrl(location));
-
-  return { data, loading, error };
+  return { data, loading, error: getError(error, errorMessage) };
 };

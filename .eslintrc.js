@@ -14,7 +14,7 @@ module.exports = {
   env: {
     es6: true,
   },
-  plugins: ['@typescript-eslint', 'react', 'react-hooks', 'prettier', 'simple-import-sort', 'testing-library'],
+  plugins: ['@typescript-eslint', 'react', 'react-hooks', 'prettier'],
   extends: [
     'prettier',
     'plugin:storybook/recommended',
@@ -107,13 +107,6 @@ module.exports = {
 
         // In many cases undefined is considered a valid value for a prop.
         'react/require-default-props': 0,
-      },
-    },
-    {
-      // Files with necessary default exports
-      files: ['*.stories.tsx', 'src/pages/_app.tsx', 'src/pages/index.tsx'],
-      rules: {
-        'import/no-default-export': 'off',
       },
     },
   ],

@@ -35,7 +35,12 @@ yarn: 1.22.4
 - .eslint.rc, prettien - in this files there is all rules which are apply in this project
 - src - this folder is the heart of the application. It consists of the:
     - components - For the folder structure I use (atomic design)[https://atomicdesign.bradfrost.com/chapter-2/]. In my opinion there is really good way to organize small and medium applications. We have a clear breakdown of our components. We create small/basic component and then we build bigger ones out of them until the moment we will come to page. This way resembles playing with Lego blocks. I tried to make that each folder will have the same structure: stories, styled, test, folder with components and index.ts. Unfortunately a lot of components haven't got a tests. I am going to add this in next iteration.
-    - context - weatherContext - in weather context I fetch data from OpenWeather api. I use context for that because I would like to avoid `prop drilling` and now we can take data from anywhere place in the app.   
+    - context - weatherContext - in weather context I fetch data from OpenWeather api. I use context for that because I would like to avoid `prop drilling` and now we can take data from anywhere place in the app.
+    - mocked - in this folder there is mocked response from api. The mock is use for storybook and tests.
+    - services - in this folder there will be all hooks which will be use for fetching data. What is mre in this folder there are folders helpers and hooks. In helpers there is all function which are uses for fetching data and in hooks folder now is one hook which is generic for data fetch.
+    - types - in this folder there is type informationfor API which is write in JavaScript.
+    - utils - in this appplication there is theme which is use in all application. More informations about it in Styles section.
+    - test-utils - in this file there is generic function for tests.
 
 
 
