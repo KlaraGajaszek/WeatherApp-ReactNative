@@ -110,7 +110,7 @@ yarn: 1.22.4
 
 ## Styles
 
-For create style I used [react native styled component](https://styled-components.com) and create customization's theme.
+For create style I used CSS-in-JS library [react native styled component](https://styled-components.com) and create customization's theme. 
 
 ## Storybook
 
@@ -118,7 +118,7 @@ Every atom, molecule and organisms has special stories. When you run storybook t
 
 ## Tests
 
-For tests I used Jest and react-native-testing-library. Tests is not completed. Now I added only examples, in the next iteration when I would like to develop this app I will add tests for other components and create mostly integration tests.  
+For tests I used Jest and react-native-testing-library. Tests is not completed. Now I added only examples, in the next iteration when I would like to develop this app I would like to add tests for other components and create mostly integration tests. In my opinion integration tests are much better than unit. 
 
 
 
