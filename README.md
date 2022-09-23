@@ -3,8 +3,8 @@
 The  Weather application in React Native is allows check current weather and weather for the next few days 🔥.
 
 
-## Getting started
-### Hardware requirements
+## 🏋️‍♀️ Getting started
+### 🎱 Hardware requirements
 - Android Studio
 - Select mobile  `Pixel Pixel_4_API_29`
  or
@@ -16,7 +16,7 @@ node: 16.15.1
 yarn: 1.22.4
 ```
 
-### Steps to run application
+### 🧁 Steps to run application
    1. Create an account and log in to the application [OpenWeather](https://openweathermap.org/appid)
    2. Create api-key
    3. Clone project - [Weather application](https://github.com/KlaraGajaszek/WeatherApp-ReactNative)
@@ -25,13 +25,13 @@ yarn: 1.22.4
    6. Run `expo start`
    7. Select a (if you would like to open in android studio) or w (if you would like to open in web browser)
 
-### Step to run tests
+### 🍬 Step to run tests
    1. Run `yarn test` in terminal
    
-### Step to run storybook
+### 🥂 Step to run storybook
    1. Run `yarn storybook` in terminal
    
-##⭐️ Architecture
+## ⭐️ Architecture
 
 ### Root files and folders
 - [**.storybook**](.storybook)
