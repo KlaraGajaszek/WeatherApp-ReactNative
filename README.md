@@ -31,7 +31,7 @@ yarn: 1.22.4
 ### Step to run storybook
    1. Run `yarn storybook` in terminal
    
-## Architecture
+⭐️ ## Architecture
 
 ### Root files and folders
 - [**.storybook**](.storybook)
@@ -108,15 +108,15 @@ yarn: 1.22.4
 
 **tests-utils** - files with wrappers for tests cases.
 
-## Styles
+🎨 ## Styles
 
-For create style I used CSS-in-JS library [react native styled component](https://styled-components.com) and create customization's theme. 
+For create style I used CSS-in-JS library [react native styled component](https://styled-components.com) and create customization's theme. I use this library because thanks for that my app has: really easy, clean and clear JSX, Themes with really good types, option to add Dark Mode realy fast and easy, Extendable base components  
 
-## Storybook
+⚡️ ## Storybook
 
-Every atom, molecule and organisms has special stories. When you run storybook then you can see all isolated components. It is really useful when we work in big team and change/add components really fast or we would like to see how it looks like without run application.
+Every atom, molecule and organisms has special stories. When you run storybook then you can see all isolated components. It is really useful when we work in big team and change/add components really fast, we would like to see how it looks like without run application, we would like to create documentation or create tests for isolated components.
 
-## Tests
+🌩 ## Tests
 
 For tests I used Jest and react-native-testing-library. Tests is not completed. Now I added only examples, in the next iteration when I would like to develop this app I would like to add tests for other components and create mostly integration tests. In my opinion integration tests are much better than unit. 
 
